@@ -1,13 +1,20 @@
-@media( max-width:700px){
+
+
+/*  =====================For I PAD / TAB ======================== */
+
+@media( max-width:768px){
+
+    .header{
+        width: 100%;
+    }
     .nav-bar{
         background-color: aqua;
     }
 
     .bannar-container{
-        width: 100%;
         display: block;
         background-color: rgb(39, 37, 37);
-        padding-left: 0;  
+        padding-left: 0;
    
     }
 
@@ -16,29 +23,20 @@
        text-align: center;
        padding-top: 40px;
     }
-
     .bannar-text h1{
         font-size: 30px;
     }
-
-    .bannar-text h1::after{
-        content: "";
-        position: relative;
-        margin-top: 40px;
+    .bannar-text h1::after{      
+       margin-top: 40px;
         display: block;
-        height: 3px;
-        width: 50px;
-        background-color: #f4c61f;
         left: 0;
         right: 0;
         top:10px;
         margin: auto; 
     }
-
     .bannar-text p{
       display: none;
    }
-
    .bannar-img{
     display: block;
     width: 50%;
@@ -46,10 +44,8 @@
     margin: 0 auto;
     padding-right: 0;  
  }
-
   /* ============ About Section================ */
  .about-container{
-    width: 100%;
     background-color: rgb(99, 91, 150);
     display: flex;
     flex-direction: column; 
@@ -57,8 +53,6 @@
  }
  .about-title{
     width: 100%;
-    padding-top:0;
-    margin-top: 50px;
     text-align: center;  
  }
 
@@ -66,41 +60,40 @@
  .about-title h5{
     color:rgb(230, 142, 10);
     font-size: 25px;
+    margin-left: 0;
+    padding-left: 0;
+ 
   }
  .about-title h2{
   padding-top: 20px;
+  padding-left: 0;
   color: white;
   font-size: 30px;
 
  }
 
  .about-title h2::after{
-    content: "";
-    position: relative;
     margin-top: 40px;
     display: block;
-    height: 3px;
-    width: 50px;
-    background-color: #f4c61f;
     left: 0;
     right: 0;
     top:10px;
     margin: auto; 
 }
-
 .about-title p{
     display: none;
 }
-
 .about-description{
     width: 100%;
 }
-
 .about-description button{
     display: block;
     margin: 0 auto;    
 }
 /* ============Service================== */
+.service{
+    width: 100%;
+}
 .service-container{
     display:flex;
     flex-direction: column;
@@ -112,6 +105,7 @@
 .img-desc{
     position: absolute;
     top:100px;
+    left: 35px;
 } 
 .img-desc h3,p{
     text-align: center;
@@ -122,11 +116,6 @@
 }
 
 .img-desc h3::after{
-    content: " ";
-    position: relative;
-    height: 3px;
-    width: 50px;
-    background-color: #f4c61f;
     display: block;
     left: 0;
     right: 0;
@@ -144,22 +133,21 @@
 
 .offer-item-container{
     display: block;
-    width: 100%;
-    
-    /* background-color: aquamarine; */
-    
+    width: 100%;    
 }
 
 .offer-container h2{
-    padding-bottom: 20px;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
 }
-
+.offer-container h2::after{
+    margin-top: 40px;
+} 
 .offer-item{
     height: 200px;
     width: 100%;
     margin: 5px auto;
     background-color: rgb(136, 111, 111);
-
 }
 
 .offer-item i{  
@@ -167,12 +155,316 @@
 }
 
 .offer-item-desc h2{
-     padding-bottom: 20px;
-     
+     padding-bottom: 20px;     
 }
 
 /* ==============Portfolio===================== */
+.portfolio-galary img{
+     height: 200px;
+}
 
+/* ===============Construction ================== */
+.portfolio{
+    width: 100%
+}
+
+
+.portfolio-galary{
+    
+    display:block;
+    grid-template-columns: auto auto auto;
+    gap: 20px;
+}
+.portfolio-galary img{
+     height: 350px;
+     width: 100%;
+     display: block;
+     margin: 10px auto;        
+}
+.construction-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    background-color: wheat;
+    align-items: center;
+}
+.blank{
+    width: 100%;   
+}
+.constuction-desc{
+    width: 100%;
+}
+.constuction-desc h3{
+    color:rgb(230, 142, 10); 
+    padding-top: 40px;
+    text-align: center;   
+}
+.constuction-desc h2{
+    color: black;
+    text-align: center; 
+}
+.constuction-desc h2::after{      
+    margin-top: 40px;
+     display: block;
+     left: 0;
+     right: 0;
+     top:10px;
+     margin: auto; 
+ }
+.constuction-desc p{  
+    padding: 10px;  
+}
+.constuction-desc button{  
+ display: block;
+ margin: 10px auto;
+}
+
+/*   ===============score ================== */
+
+.score{
+    width: 100%;
+}
+
+.score-container{
+    padding-top: 20px;
+}
+
+.score-item h3{
+    margin-top: 30px;
+}
+
+.score-item p::after{ 
+    top:10px;
+}
+
+/* ============== work  section=========== */
+
+.work{
+    width: 100%;
+    padding-top: 20px;
+}
+
+.work-container{
+    display: flex;
+    flex-direction: column;
+ 
+}
+.work-card{
+   width: 100%;
+}
+
+.work-card h1{ 
+    font-size: 18px; 
+}
+
+/* =============Testimonials=========== */
+
+.testimonial{
+    width:100%;
+}
+
+.testimonial-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.testimonial-card{
+   width: 90%;
+}
+.testimonial-card h1{
+    margin-top: 120px;
+    
+}
+
+/* ================Brand Section========= */
+
+.brand{
+    width: 100%;
+}
+.brand-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    padding: 20px 0;
+}
+
+.brand-container img{
+    height:55px;
+}
+/* ==========================Blog ============== */
+
+.blog{
+    width: 100%;
+}
+.blog-container{
+    display: flex;
+    flex-direction: column;
+}
+.blog-card{
+  width: 100%;
+}
+
+/* ============== purchase============= */
+
+.purchase-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.purchase-btn button{
+    padding: 10px;
+    border: 1px solid white;
+    background: transparent;
+    display: block;
+    margin: 0 auto;
+}
+
+/* ===========footer=========== */
+
+.footer-container{
+    height: 60px;
+    width: 80%;
+    margin: 0 auto;
+    background-color: #171717;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 25px;
+} 
+
+}
+
+/*  =====================For moblile======================== */
+
+
+@media( max-width:400px){
+    .header{
+        width:100%;
+    }
+    .nav-bar{
+        background-color: rgb(121, 26, 129);
+        
+    }
+     .logo{
+        font-size: 20px;
+        margin: 2px 10px;      
+     }
+
+     .header span{
+        font-size: 24px;
+    }
+    
+    .bannar-text h1{
+        font-size: 22px;
+    }
+    .bannar-text h1::after{      
+    width: 35px;
+    }
+     
+
+   .bannar-img{
+    display: block;
+    width: 50%;
+    height: 329px;
+    margin: 0 auto;
+    padding-right: 0;  
+ }
+  /* ============ About Section================ */
+
+ .about-title h5{
+    font-size: 17px;
+  }
+  .about-title{
+   
+   margin: 0; 
+    
+ }
+ .about-title h2{
+  color: white;
+  font-size: 23px;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+
+ }
+.about-description{
+padding-top: 30px; 
+padding-bottom: 20px;
+}
+.about-description button{
+    display: block;
+    margin: 0 auto;    
+}
+/* ============Service================== */
+.service{
+    width: 100%;  
+}
+
+.service-item{
+    height: 210px;
+    position: relative;   
+}
+.service-item img{
+    height: 200px;
+    margin-top: 10px;   
+}
+.img-desc{
+    position: absolute;
+    top:40px;
+    left: 0;
+
+} 
+.img-desc h3,p{
+    text-align: center;
+    margin-left: 0;  
+}
+
+/*  ===============Offer Section=============== */
+
+.offer-container{
+    width: 100%;
+    background-color:#fff;
+    
+}
+
+.offer-item-container{
+    display: block;
+    width: 100%;    
+}
+.offer-container h2{
+padding-top:10px;
+}
+
+
+.offer-item i{  
+    margin-left: 15px;
+    width: 30%;
+}
+
+.offer-item-desc{
+    width: 70%;
+}
+.offer-item-desc h3{
+     padding-bottom: 20px;
+     font-size: 18px;
+    
+}
+
+.offer-item-desc p{
+    padding-bottom: 10px;
+    font-size: 14px;
+    padding-left: 7px;
+   
+    
+}
+/* ==============Portfolio===================== */
+
+.portfolio{
+    width: 100%;
+}
 .portfolio-galary{
     display: flex;
     flex-direction: column;
@@ -239,6 +531,10 @@
 
 /*   ===============score ================== */
 
+.score{
+    width:100%;
+     
+}
 .score-container{
     display: block;
     padding-bottom: 20px;
@@ -285,23 +581,22 @@
     flex-direction: column;
 }
 .testimonial-card{
-   width: 100%;
+   width: 80%;
 }
 .testimonial-card p{
     padding-bottom: 10px;
-    padding-top: 10px;
+    padding-top: 5px;
+    margin-top: 10px;
 }
 
 .testimonial-card img{
-    top: 50px
+    top: 80px;
 }
 
 .testimonial-card h1{
-    margin-top: 90px;
-    text-align: center;
-    
+    margin-top: 100px;
+    text-align: center;   
 }
- 
 .testimonial-card h4{
     color: yellow;
     text-align: center;
@@ -311,66 +606,33 @@
 /* ================Brand Section========= */
 
 .brand{
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
     background-color: #171717;
 }
-.brand-container{
-    display: flex;
-    justify-content: center;
-
-}
-
 .brand-container img{
     width:85px;
 }
 /* ==========================Blog ============== */
  
-.blog-container{
-    display: flex;
-    flex-direction: column;
-}
-.blog-card{
-  width: 100%;
-  padding: 10px;
-  display: flex; 
-}
-.blog-card img{
-    height: 250px;
+.blog{
     width: 100%;
-    border: 2px solid black;
-} 
+    margin: 0 auto;
+    padding-top: 10px;
+    background-color: #fff;
+}
+
+
 /* ============== purchase============= */
 
 .purchase-container{
-    width: 80%;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    background: #d19512;
+    width: 100%;
 }
 
-.purchase-btn button{
-    padding: 10px;
-    border: 1px solid white;
-    background: transparent;
-    display: block;
-    margin: 0 auto;
-}
 
 /* ===========footer=========== */
 
 .footer-container{
-    height: 60px;
-    width: 80%;
-    margin: 0 auto;
-    background-color: #171717;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 25px;
+ width: 100%;  
 } 
 }
-
-
-
